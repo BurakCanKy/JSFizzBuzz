@@ -1,11 +1,11 @@
 function divideInt(number, divide) {
-    return number % divide;
+    return number % divide == 0;
 }
 
 function fizzBuzz(randomInt) {
-    divideInt(randomInt, 15) == 0 ? console.log('FizzBuzz') :
-        divideInt(randomInt, 3) == 0 ? console.log('Fizz') :
-            divideInt(randomInt, 5) == 0 ? console.log('Buzz') : console.log('None');
+    divideInt(randomInt, 15)  ? console.log('FizzBuzz') :
+        divideInt(randomInt, 3)  ? console.log('Fizz') :
+            divideInt(randomInt, 5)  ? console.log('Buzz') : console.log('None');
 }
 
 while (true) {
